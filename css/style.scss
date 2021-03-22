@@ -804,7 +804,7 @@ text-align: center;
 	top:170px;
 	left:5%;
 	padding-left: 20px;
-	height: 1430px;
+	height: 1570px;
 	text-align: left;
 	box-shadow: 0px 0px 10px hsl(176, 50%, 47%);
 	animation: showReward 0.5s ease-in-out normal forwards; 
@@ -819,23 +819,30 @@ text-align: center;
 	
 	.pledge , .bamboo , .black{
 		@include inside-back;
-		height: 270px;
+		height: 300px;
 		
 		
 		.hidden-pledge , .hidden-bamboo , .hidden-black{
+			text-align: center;
 		
 			h5{
 				font-size: 14px;
+				position: relative;
 			}
 		
 			input{
-			
               width: 60px;
+				position: relative;
+				float: none;
+				margin-left: 10px;
 			}
 			
 		button{
 				width: 90px;
 			font-size: 14px;
+				float: none;
+			margin-left: 0px;
+			
 				
 			}
 
@@ -844,7 +851,7 @@ text-align: center;
 		}
 	.mahogany{
 		@include inside-back;
-		height: 270px;
+		height: 300px;
 		opacity: 0.2;
 	}
 	

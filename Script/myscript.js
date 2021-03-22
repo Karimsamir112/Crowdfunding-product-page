@@ -69,11 +69,11 @@ function showHideBack(id , class2 , class3 , class10 , class20 , class100 , clas
 	document.querySelector(class2).style.display="block";
 	document.querySelector(class3).style.height="345px";
 	document.querySelector(class3).style.border="2px solid hsl(176, 50%, 47%)";
-	document.querySelector(".backProject").style.height="1530px";
+	document.querySelector(".backProject").style.height="1610px";
 	
 	// other is hidden when clicked
-	document.querySelector(class10).style.height="270px";
-	document.querySelector(class20).style.height="270px";
+	document.querySelector(class10).style.height="300px";
+	document.querySelector(class20).style.height="300px";
 	document.querySelector(class100).style.display="none";
 	document.querySelector(class200).style.display="none";
 }

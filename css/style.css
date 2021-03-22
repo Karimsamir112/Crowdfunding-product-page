@@ -731,7 +731,7 @@ header {
     top: 170px;
     left: 5%;
     padding-left: 20px;
-    height: 1430px;
+    height: 1570px;
     text-align: left;
     box-shadow: 0px 0px 10px #3cb4ac;
     animation: showReward 0.5s ease-in-out normal forwards; }
@@ -759,7 +759,7 @@ header {
       cursor: pointer;
       padding-left: 30px;
       padding: 20px;
-      height: 270px; }
+      height: 300px; }
       .backProject .pledge p, .backProject .bamboo p, .backProject .black p {
         margin-top: 10px;
         margin-left: 60px; }
@@ -834,13 +834,21 @@ header {
           width: 120px;
           height: 40px;
           float: right; }
-      .backProject .pledge .hidden-pledge h5, .backProject .pledge .hidden-bamboo h5, .backProject .pledge .hidden-black h5, .backProject .bamboo .hidden-pledge h5, .backProject .bamboo .hidden-bamboo h5, .backProject .bamboo .hidden-black h5, .backProject .black .hidden-pledge h5, .backProject .black .hidden-bamboo h5, .backProject .black .hidden-black h5 {
-        font-size: 14px; }
-      .backProject .pledge .hidden-pledge input, .backProject .pledge .hidden-bamboo input, .backProject .pledge .hidden-black input, .backProject .bamboo .hidden-pledge input, .backProject .bamboo .hidden-bamboo input, .backProject .bamboo .hidden-black input, .backProject .black .hidden-pledge input, .backProject .black .hidden-bamboo input, .backProject .black .hidden-black input {
-        width: 60px; }
-      .backProject .pledge .hidden-pledge button, .backProject .pledge .hidden-bamboo button, .backProject .pledge .hidden-black button, .backProject .bamboo .hidden-pledge button, .backProject .bamboo .hidden-bamboo button, .backProject .bamboo .hidden-black button, .backProject .black .hidden-pledge button, .backProject .black .hidden-bamboo button, .backProject .black .hidden-black button {
-        width: 90px;
-        font-size: 14px; }
+      .backProject .pledge .hidden-pledge, .backProject .pledge .hidden-bamboo, .backProject .pledge .hidden-black, .backProject .bamboo .hidden-pledge, .backProject .bamboo .hidden-bamboo, .backProject .bamboo .hidden-black, .backProject .black .hidden-pledge, .backProject .black .hidden-bamboo, .backProject .black .hidden-black {
+        text-align: center; }
+        .backProject .pledge .hidden-pledge h5, .backProject .pledge .hidden-bamboo h5, .backProject .pledge .hidden-black h5, .backProject .bamboo .hidden-pledge h5, .backProject .bamboo .hidden-bamboo h5, .backProject .bamboo .hidden-black h5, .backProject .black .hidden-pledge h5, .backProject .black .hidden-bamboo h5, .backProject .black .hidden-black h5 {
+          font-size: 14px;
+          position: relative; }
+        .backProject .pledge .hidden-pledge input, .backProject .pledge .hidden-bamboo input, .backProject .pledge .hidden-black input, .backProject .bamboo .hidden-pledge input, .backProject .bamboo .hidden-bamboo input, .backProject .bamboo .hidden-black input, .backProject .black .hidden-pledge input, .backProject .black .hidden-bamboo input, .backProject .black .hidden-black input {
+          width: 60px;
+          position: relative;
+          float: none;
+          margin-left: 10px; }
+        .backProject .pledge .hidden-pledge button, .backProject .pledge .hidden-bamboo button, .backProject .pledge .hidden-black button, .backProject .bamboo .hidden-pledge button, .backProject .bamboo .hidden-bamboo button, .backProject .bamboo .hidden-black button, .backProject .black .hidden-pledge button, .backProject .black .hidden-bamboo button, .backProject .black .hidden-black button {
+          width: 90px;
+          font-size: 14px;
+          float: none;
+          margin-left: 0px; }
     .backProject .mahogany {
       margin-top: 50px;
       width: 90%;
@@ -849,7 +857,7 @@ header {
       cursor: pointer;
       padding-left: 30px;
       padding: 20px;
-      height: 270px;
+      height: 300px;
       opacity: 0.2; }
       .backProject .mahogany p {
         margin-top: 10px;
