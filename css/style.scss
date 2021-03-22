@@ -1,0 +1,857 @@
+$mainSize: 16px;
+$cyan: hsl(176, 50%, 47%);
+$grey: hsl(0, 0%, 48%);
+$transition:all 0.3s ease-in-out;
+$map: (h1 :$mainSize * 1.8 , h2 :$mainSize * 1.5 , h3 :$mainSize * 1.2 , h4:16px );
+
+@each $element , $size in $map{
+	
+	
+	#{$element}{
+		font-size: $size;
+		color:hsl(0, 0%, 0%);
+	}
+}
+
+@mixin buttons{
+	background-color: $cyan;
+			border-radius: 120px;
+			border:1px solid white;
+			text-align: center;
+			transition: $transition;
+			color:white;	
+}
+
+@mixin divs($H){
+	margin:50px auto;
+	width: 60%;
+	padding: 20px;
+	 border-radius: 5px;
+	background-color: white;
+	box-shadow: 0px 0px 0px 0.05px $grey;
+	height: $H;
+}
+
+@mixin inside-burg{
+
+display: none;
+			visibility: visible;
+			text-align: center;
+		position: absolute;
+			top:40px;
+			left:10%;
+			margin:50px auto;
+			width: 80%;
+			height: 250px;
+			padding: 20px;
+			background-color: #efefef;
+			border-radius: 20px;
+	box-shadow: 0px 0px 40px hsl(176, 50%, 47%);
+			
+			li{
+				list-style-type: none;
+				margin-top: 40px;
+				
+				a{
+					color:black;
+					text-decoration: none;
+					transition: $transition;
+				}
+				a:hover{
+					color:hsl(176, 50%, 47%);
+					 border-bottom:4px solid hsl(176, 50%, 47%);
+                 padding-bottom:15px;
+				}
+			}
+}
+
+@mixin inside-back{
+	margin-top: 50px;
+		width: 90%;
+		height: 200px;
+		border:0.5px solid $grey;
+		cursor: pointer;
+		padding-left: 30px;
+		padding: 20px;
+		
+		p{
+		margin-top: 10px;
+		margin-left: 60px;
+	}
+		
+		div{ 
+			
+			i{
+				opacity: 1;
+				font-size: 30px;
+				color:#dddddd;
+				 }
+			#circle-inside-pledge , #circle-inside-bamboo , #circle-inside-black , #circle-inside-mahogany{
+				display: none;
+				opacity: 1;
+				z-index: 10000;
+				color:$cyan;
+				font-size: 18px;
+                position: absolute;
+                margin-top: -24px;
+                margin-left: 6px;
+			}
+		
+		h4:first-of-type{
+			display: inline-block;
+			position: relative;
+			top:-5px;
+			margin-left: 30px;
+		}
+			
+			
+			
+			label{
+				color:$cyan;
+				display: inline-block;
+				margin-left: 20px;
+				position: relative;
+				top:-5px;
+			}
+			
+			h4{
+				display: inline-block;
+				margin-left: 60px;
+				position: relative;
+				top:-5px;
+				
+				span{
+					font-size: 15px;
+					margin-left: 2px;
+				}
+			}
+			
+		
+			}
+			div:hover i , div:hover h4{
+				color:$cyan;
+				opacity: 1;
+			}
+		
+		.hidden-pledge , .hidden-bamboo , .hidden-black{
+			display: none;
+		hr{
+			margin-top: 40px;
+			width: 100%;
+			border:0.2px solid $grey;
+		}
+			h5{
+				font-size: 18px;
+				color: $grey;
+				position: absolute;
+				margin-top:25px;
+			}
+			
+			
+			input{
+				display: inline-block;
+				padding-left: 5px;
+              width: 80px;
+				height: 40px;
+				border-radius: 120px;
+			border:0.2px solid $grey;
+				float: right;
+				position: relative;
+			top:20px;
+				opacity: 0.2;
+			}
+			
+		button{
+			@include buttons;
+			transition: 0s all ease-in-out;
+			position: relative;
+			top:20px;
+			left:10px;
+				width: 120px;
+				height: 40px;
+			float: right;
+			}
+	
+			
+			}
+	
+}
+
+p , span{
+	color: $grey;
+}
+
+
+button:hover{
+	opacity: 0.7;
+}
+
+
+
+body{
+	overflow-x: hidden;
+	font-size: $mainSize;
+	font-family: 'Commissioner' , sans-serif;
+	font-weight: 400, 500, 700; 
+}
+/* header */
+
+header{
+	width: 100%;
+	height: 400px;
+	padding: 40px;
+	padding-left: 130px;
+	background: url("../images/image-hero-desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: space-between; 
+	
+	img{
+		width: 150px;
+		height: 25px;
+	}
+	
+	nav{
+		margin-right: 80px;
+		li{
+			list-style-type: none;
+			display: inline-block;
+			margin-left: 40px;
+			
+			a{
+				text-decoration: none;
+				color: #e6e6e6;
+				transition: $transition;
+			}
+			a:hover{
+				text-decoration: none;
+				color: white;
+				 border-bottom:4px solid hsl(176, 50%, 47%);
+                 padding-bottom:25px;
+			}
+		}
+		
+	}
+	
+	
+	
+	.inside-burger , .inside-burger2 , .burger , .close{
+		display: none;
+		visibility: hidden;
+		position: absolute;
+	}  
+	
+}
+
+/* section 1 */
+
+.mastercraft{
+	
+	@include divs(330px);
+	text-align: center;
+	margin-top: -100px;
+	
+	
+	img{
+		text-align: center;
+		width: 50px;
+		height: 50px;
+		margin-top: -50px;
+	}
+	
+	h1{
+		text-align: center;
+	}
+	p{
+		text-align: center;
+		margin-top: 20px;
+	}
+	
+	.buttons{
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		column-gap: 250px;
+		margin-top: 40px;
+		
+		div{  
+		width: 300px;
+		button{
+			width: 100%;
+			height: 65px;
+			@include buttons;
+		
+		}
+			}
+		
+		div:nth-of-type(2){
+		/*	background: url("../images/icon-bookmark.svg") 10px 10px no-repeat;  */
+			width: 200px;
+			
+			i{
+				position: absolute;
+				margin-top: 3px;
+                margin-left: 2px;
+                 width: 60px;
+                height: 59px;
+				cursor: pointer;
+				font-size: 18px;
+				padding-top: 20px;
+				border-radius: 120px;
+				text-align: center;
+				color:#c3c3c3;
+				background-color: dimgrey;
+			}
+			
+			
+			button{
+				
+				@include buttons;
+			background-color: #eaeaea;
+				color:dimgrey;
+				width: 200px;
+			height: 65px;
+				padding-left: 25%;
+			
+			}
+			button:hover{
+			opacity: 1;
+		}
+			
+		}
+		
+		div:last-of-type{
+			display: none;
+			width: 200px;
+			
+			i{
+				position: absolute;
+				padding-top: 20px;
+				font-size: 18px;
+				margin-top: 3px;
+                margin-left: 2px;
+                 width: 60px;
+                height: 59px;
+				cursor: pointer;
+				color:white;
+				background-color: hsl(176, 50%, 47%);
+				border-radius: 120px;
+				text-align: center;
+				
+			}
+			
+			button{
+				
+				@include buttons;
+			background-color: #eaeaea;
+				width: 200px;
+			height: 65px;
+				padding-left: 25%;
+			color: hsl(176, 50%, 47%);
+			}
+			button:hover{
+				opacity: 1;
+			}
+		}
+		
+	
+	
+	}
+}
+
+/* section 2 */
+
+.numbers{
+	@include divs(260px);
+	margin-top: 50px;
+	
+	.price{
+		display: flex;
+		
+		div:first-of-type{
+			margin-left: 5%;
+		}
+		
+		div:nth-of-type(2) , div:last-of-type{
+			margin-left: -15%;
+		} 
+		
+		hr{
+			height: 80px;
+			border:1px solid $grey;
+			margin-left: 5%;
+		}
+	}
+	
+	.input{
+		margin-left:5%;
+		margin-top: 40px;
+		
+		meter{
+			width: 95%;
+			border-radius: 20px;
+			height: 30px
+		}
+		
+		meter::-webkit-meter-optimum-value {
+		border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+  box-shadow: 0 5px 5px -5px #999 inset;
+ background-color: $cyan;
+	}
+}
+
+
+
+}
+
+
+
+/* section 3 */
+
+
+.about-project{
+	@include divs(1400px);
+	margin-top: 50px;
+	padding-left: 5%;
+	
+	p{
+		margin-top: 40px;
+	}
+	
+	article{
+		@include divs(320px);
+		margin:0px ;
+		margin-top: 40px;
+		padding: 40px;
+		width: 95%;
+		
+	box-shadow: 0px 0px 0px 0.25px $grey;
+		
+		
+		div{
+
+			display: flex;
+			
+			justify-content: space-between;
+			
+		/*	justify-content: space-around;
+			column-gap: 200px; */
+		}
+		
+		label{
+			color: hsl(176, 72%, 28%);
+			margin-top: 20px;
+			cursor: pointer;
+		}
+		label:hover{
+			opacity: 0.7;
+		}
+		
+		p , div:last-of-type{
+			margin-top: 30px;
+		}
+		
+		span{
+			position: relative;
+			top:-5px;
+			margin-left: 5px;
+			font-size: 15px;
+		}
+		
+		button{
+			@include buttons;
+			height: 50px;
+			width: 170px;
+		}
+		
+	}
+	article:last-of-type{
+		opacity: 0.5;
+		
+		button{
+			background-color: $grey;
+		}
+		button:hover{
+			opacity: 1;
+		}
+	}
+	
+	
+	
+}
+
+
+
+/* hidden divs */
+
+/* rewards */
+.reward{
+	@include inside-burg;
+	visibility: visible;
+	position: fixed;
+	top:170px;
+	height: 450px;
+	box-shadow: 0px 0px 10px hsl(176, 50%, 47%);
+	animation: showReward 0.5s ease-in-out normal forwards;
+	
+	h2 , p , button{
+		margin-top: 45px;
+	}
+	
+	button{
+		@include buttons;
+		width: 140px;
+		height: 50px;
+	}
+	
+	@keyframes showReward {
+		
+		from{
+			margin-top: -500px;
+		}
+		to{
+			margin-top: 0px;
+		}
+	}
+	
+	
+}
+
+/* back this project */
+
+.backProject{
+	
+	@include inside-burg;
+	visibility: visible;
+	width: 60%;
+	position: absolute;
+	top:170px;
+	left:20%;
+	padding-left: 70px;
+	height: 1200px;
+	text-align: left;
+	box-shadow: 0px 0px 10px hsl(176, 50%, 47%);
+	animation: showReward 0.5s ease-in-out normal forwards;
+	
+	p{
+		margin-top: 20px;
+		
+	}
+	
+	img{
+		float: right;
+		cursor: pointer;
+		margin-top: -70px;
+		margin-right: 2%;
+	}
+	
+	.pledge , .bamboo , .black , .mahogany{
+		@include inside-back
+	
+		}
+	.mahogany{
+		@include inside-back;
+		opacity: 0.2;
+	}
+	
+	
+	
+	
+	
+	
+	}
+
+
+
+
+
+
+/* small devices */
+
+@media (max-width:1000px){
+	
+	$map: (h1 :$mainSize * 1.6 , h2 :$mainSize * 1.3 , h3 :$mainSize * 1 , h4:14px );
+
+@each $element , $size in $map{
+	
+	
+	#{$element}{
+		font-size: $size;
+		color:hsl(0, 0%, 0%);
+	}
+}
+	
+	/* header */
+	
+	header{
+		background: url(../images/image-hero-mobile.jpg);
+		padding-left: 20px;
+		padding: 20px;
+		
+		nav{
+			display: none;
+		}
+		.burger{
+			display: block;
+			visibility: visible;
+			height: 25px;
+			width: 35px;
+			margin-top: 5px;
+			position: relative;
+			cursor: pointer;
+		}
+		.close{
+			display: none;
+			visibility: visible;
+			cursor: pointer;
+			height: 25px;
+			width: 40px;
+			opacity: 1;
+			margin-top: 5px;
+			position: relative;
+		}
+		.close:hover{
+			opacity: 1;
+		}
+		
+		.inside-burger{
+			@include inside-burg;
+		animation: showdiv 1s ease-in-out 0s 1 normal forwards;
+		}
+		.inside-burger2{
+			@include inside-burg;
+			animation: closediv 0.4s ease-in-out 0s 1 normal forwards;
+		}
+	
+	
+	
+	
+	@keyframes showdiv{
+			
+			0%{
+				margin-top: -300px;
+			}
+			25%{
+				margin-top: 50px;
+			}
+			50%{
+				margin-top: 20px;
+			}
+			75%{
+				margin-top: 60px;
+			}
+			100%{
+				margin-top: 50px;
+			}
+			
+		}
+		
+		
+		@keyframes closediv {
+			
+			from{
+				margin-top: 50px;
+				
+			}
+			to{
+				margin-top: -600px;
+			}
+		}
+	
+	}
+	
+	
+	
+	
+	/* section 1 */
+	
+	
+.mastercraft{
+	
+	@include divs(360px);
+	width: 90%;
+text-align: center;
+	margin-top: -100px; 
+	
+
+	.buttons{
+	column-gap: 0px;
+		margin-left: -40px;
+		
+		
+		div:nth-of-type(2){
+		/*	background: url("../images/icon-bookmark.svg") 10px 10px no-repeat;  */
+			width: 30px;
+			
+	
+			button{
+				display: none;
+			
+			}
+			
+		}
+		
+		
+		div:last-of-type{
+			width: 30px;
+			
+			button{
+				display: none;
+			}
+			
+		}
+		
+	
+	
+	}
+}
+	
+	
+	
+	/* section 2 */
+	
+	.numbers{
+	@include divs(590px);
+		width: 90%;
+	margin-top: 50px;
+		text-align: center;
+	
+	.price{
+		display:block;
+		
+		
+		div:first-of-type{
+			margin-top: 5%;
+		}
+		
+		div:nth-of-type(2) , div:last-of-type{
+			position: relative;
+			top:-20px;
+			margin-left: 0%;
+		}  
+		
+		hr:first-of-type{
+			position: relative;
+			top:-20px;
+		}
+		
+		hr{
+			width: 90px;
+			height: 0px;
+			border:1px solid $grey;
+			position: relative;
+			top:-40px;
+			margin-left: 0%;
+			margin:50px auto;
+			text-align: center;
+		}
+	}
+	
+		.input{
+			margin-top: -50px;
+		}
+
+
+}
+
+	
+	/* section 3 */
+	
+	
+	.about-project{
+	@include divs(1500px);
+		width: 90%;
+	margin-top: 50px;
+	padding-left: 5%;
+	
+
+	
+	article{
+
+		@include divs(420px);
+		width: 100%;
+		margin-top: 40px;
+		padding: 40px;
+		
+		
+	box-shadow: 0px 0px 0px 0.25px $grey;  
+		
+		div{
+
+			display: block;
+		}
+		
+	
+	
+}
+	
+	
+}
+	
+	/* hidden divs */
+	
+	
+/* back this project */
+
+.backProject{
+	
+	@include inside-burg;
+	visibility: visible;
+	width: 90%;
+	position: absolute;
+	top:170px;
+	left:5%;
+	padding-left: 20px;
+	height: 1400px;
+	text-align: left;
+	box-shadow: 0px 0px 10px hsl(176, 50%, 47%);
+	animation: showReward 0.5s ease-in-out normal forwards; 
+	
+	p{
+		font-size: 13px;
+	}
+	img{
+		margin-top: -95px;
+		margin-right: 2%;
+	}
+	
+	.pledge , .bamboo , .black{
+		@include inside-back;
+		height: 250px;
+		
+		
+		.hidden-pledge , .hidden-bamboo , .hidden-black{
+		
+			h5{
+				font-size: 14px;
+			}
+		
+			input{
+			
+              width: 50px;
+			}
+			
+		button{
+				width: 80px;
+				
+			}
+
+			}
+	
+		}
+	.mahogany{
+		@include inside-back;
+		height: 250px;
+		opacity: 0.2;
+	}
+	
+	
+
+	
+	}
+
+
+}
+

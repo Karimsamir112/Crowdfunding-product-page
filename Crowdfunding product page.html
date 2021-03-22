@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<title>Crowdfunding product page</title>
+	
+	
+	
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	
+	
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	
+		
+<!-- soret el mawke3 -->
+	
+	<!-- <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon"> -->
+	
+	
+
+	<!-- for fonts w a8ayar fih bera7ty -->
+	
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	  
+	
+	<script type="text/javascript" src="Script/myscript.js"></script>
+	
+	
+
+	</head>
+
+<body>
+	
+	<!-- header -->
+	
+	<header>
+	
+	<img src="./images/logo.svg" alt="logo"/>
+		
+		<nav>
+			
+		<li><a href="">About</a></li>
+		<li><a href="">Discover</a></li>
+		<li><a href="">Get Started</a></li>
+		
+		</nav>
+	
+		
+		<img onclick="showDiv();" class="burger" src="./images/icon-hamburger.svg" alt="humb"/>
+		<img onclick="closeDiv();" class="close" src="./images/icon-close-menu.svg" alt="closee"/>
+	
+	<div class="inside-burger">
+		
+		<li><a href="">About</a></li>
+		<li><a href="">Discover</a></li>
+		<li><a href="">Get Started</a></li>
+		
+		</div>
+		
+		<div class="inside-burger2">
+		
+		<li><a href="">About</a></li>
+		<li><a href="">Discover</a></li>
+		<li><a href="">Get Started</a></li>
+		
+		</div>
+	
+	</header>
+	
+	<!-- section 1 -->
+	
+	<section class="mastercraft">
+		
+		<img src="./images/logo-mastercraft.svg" alt="master"/>
+		
+		<h1>Mastercraft Bamboo Monitor Riser</h1>
+		<p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+		
+		<div class="buttons"> 
+		
+	<div> <button onclick="showBack();">Back this project</button> </div>	    <div onclick="bookmarked();" class="bookmark"> <i class="fas fa-bookmark"></i> <button>Bookmark</button> </div>
+			<div onclick="bookmark();" class="bookmarked"> <i class="fas fa-bookmark"></i> <button>Bookmarked</button> </div>
+		
+			</div>
+	
+	</section>
+	
+	
+	
+	
+	<!-- section 2 -->
+	
+	<section class="numbers">
+		<div class="price">  
+		
+		<div>
+		<h1>$89,914</h1>
+			<p>of $100,000 backed</p>
+		</div>
+		<hr>
+			
+		
+		<div>
+		<h1>5,007</h1>
+			<p>total backers</p>
+		</div>
+		<hr>
+			
+		
+		<div>
+		<h1>56</h1>
+			<p>days left</p>
+		</div>
+	    <hr>
+			
+</div>
+		
+		
+		<div class="input">  
+		<meter  value="80" max="100"></meter>
+			</div>
+			
+			
+				
+		
+	</section>
+	
+
+	
+	
+	<!-- section 3 -->
+	
+	<section class="about-project">
+	
+	<h2>About this project</h2>
+	
+	<p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+		
+		<p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+	
+		
+		<article>
+		
+			<div>
+			<h3>Bamboo Stand</h3>  <label>Pledge $25 or more</label>
+			
+			</div>
+			
+			<p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+			
+			<div>
+			
+			<h2 class="p101">101 <span>left</span> </h2>  <button onclick="showReward1();">Select Reward</button>
+			</div>
+		
+		</article>
+		
+		
+		<article>
+		
+			<div>
+			<h3>Black Edition Stand</h3>  <label>Pledge $75 or more</label>
+			
+			</div>
+			
+			<p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+			
+			<div>
+			
+			<h2 class="p64">64 <span>left</span> </h2>  <button onclick="showReward2();">Select Reward</button>
+			</div>
+		
+		</article>
+		
+		
+		<article>
+		
+			<div>
+			<h3>Mahogany Special Edition</h3>  <label>Pledge $200 or more</label>
+			
+			</div>
+			
+			<p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+			
+			<div>
+			
+			<h2>0 <span>left</span> </h2>  <button>Out of stock</button>
+			</div>
+		
+		</article>
+	
+	
+	</section>
+	
+	
+	
+	<!-- hidden divs -->
+	
+	<!-- rewards -->
+	
+	<div class="reward">
+	
+	<img src="./images/icon-check.svg" alt="check"/>
+		
+		<h2>Thanks for your support!</h2>
+		
+		<p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.</p>
+		
+		<button onclick="closeReward();">Got It</button>
+	
+	</div>
+	
+	
+	
+	<!-- back this project -->
+	
+	<footer class="backProject">
+	
+		<h1>Back this project</h1>
+		<p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+		
+		<img onclick="closeBack();" src="./images/icon-close-modal.svg" alt="close"/>
+		
+		<!-- first article -->
+		<article class="pledge" onclick="showHideBack('circle-inside-pledge' , '.hidden-pledge' , '.pledge' , '.bamboo' , '.black' , '.hidden-bamboo' , '.hidden-black' );">
+		<div>
+			<i class="far fa-circle"> <i id="circle-inside-pledge" class="fas fa-circle"></i> </i>
+			<h4>Pledge with no reward</h4>   </div>
+			<p>Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email</p>
+			
+			<div class="hidden-pledge">
+			<hr>
+			
+			<button onclick="continueReward();">continue</button>
+				
+				</div>
+		
+		
+		</article>
+		
+		<!-- second article -->
+		<article class="bamboo" onclick="showHideBack('circle-inside-bamboo' , '.hidden-bamboo' , '.bamboo' , '.pledge' , '.black' , '.hidden-pledge' , '.hidden-black' );">
+		<div>
+			<i class="far fa-circle"> <i id="circle-inside-bamboo" class="fas fa-circle"></i> </i>
+			<h4>Bamboo stand</h4> <label>Pledge $25 or more</label> <h4>101 <span>left</span> </h4>  </div>
+		
+		  <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.</p>
+			
+			<div class="hidden-bamboo">
+			<hr>
+				
+				<h5>Enter your pledge</h5>
+				<button onclick="continueReward();">continue</button>
+				<input type="text" value="$">
+				
+			
+			</div>
+		
+		</article>
+	
+		<!-- second article -->
+		<article class="black" onclick="showHideBack('circle-inside-black' , '.hidden-black' , '.black' , '.pledge' , '.bamboo' , '.hidden-pledge' , '.hidden-bamboo' );">
+		<div>
+			<i class="far fa-circle"> <i id="circle-inside-black" class="fas fa-circle"></i> </i>
+			<h4>Black Edition stand</h4> <label>Pledge $75 or more</label> <h4>64 <span>left</span> </h4>  </div>
+		
+		  <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list.</p>
+			
+			<div class="hidden-black">
+			<hr>
+				
+				<h5>Enter your pledge</h5>
+				<button onclick="continueReward();">continue</button>
+				<input type="text" value="$">
+				
+			
+			</div>
+		
+		</article>
+		
+		<!-- final article -->
+	
+		<article class="mahogany">
+		<div>
+			<i class="far fa-circle"> <i id="circle-inside-black" class="fas fa-circle"></i> </i>
+			<h4>Mahogany special edition</h4> <label>Pledge $200 or more</label> <h4>0 <span>left</span> </h4>  </div>
+		
+		  <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.</p>
+	
+		
+		</article>
+	
+	</footer>
+	
+
+
+
+		<script src="https://kit.fontawesome.com/682febeeb9.js" crossorigin="anonymous"></script> 
+    
+	</body>
+</html>
